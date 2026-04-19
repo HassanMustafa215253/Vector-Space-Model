@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-stone-100 text-stone-900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Base rhythm for content blocks */
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-stone-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-400 rounded hover:bg-stone-500;
+}
+
+/* Shared surface style for editorial cards */
+.news-card,
+.glass {
+  @apply bg-stone-50 border border-stone-300 rounded-md shadow-sm;
+}
+
+.newspaper-title,
+.gradient-text {
+  color: #1c1917;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+.newspaper-subtitle {
+  color: #292524;
+}
+
+.news-alert {
+  @apply p-4 bg-red-50 border border-red-300 rounded text-red-800 text-sm;
+}
+
+.query-chip {
+  @apply text-xs px-3 py-1 rounded-full border border-stone-400 bg-stone-100 text-stone-700;
+}
+
+.metric-card {
+  @apply rounded-md border border-stone-300 bg-white px-3 py-2;
+}
+
+.metric-label {
+  @apply text-xs uppercase tracking-wide text-stone-500;
+}
+
+.metric-value {
+  @apply mt-1 text-lg font-semibold text-stone-900;
+}
+
+.feature-card {
+  @apply rounded-md border border-stone-300 bg-white p-4 space-y-2;
+}
